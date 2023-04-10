@@ -1,8 +1,9 @@
-const viewBtn = document.querySelector('.bun-see-btn');
+const submitBtn = document.querySelector('#submit input[type="submit"]');
 const overlay = document.getElementById('overlay');
 const closeBtn = document.getElementById('close-btn');
 
-viewBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // prevent the form from submitting
   overlay.style.display = 'flex';
 });
 
