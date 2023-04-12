@@ -31,6 +31,7 @@
  #main-header {
     padding-top: 10px;
      background-color: #FFCA4A;
+     max-width: 1500px;
  }
  
  #main-nav {
@@ -153,10 +154,14 @@
   ul li a{
      text-decoration: none;
      font-size: 25px;
+     font-family: 'Caudex', serif;
+     
  }
  
-
-
+ 
+ 
+ 
+ 
 
 
  /* Hero image */
@@ -168,6 +173,19 @@
     background-image: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+#contact-des h1{
+    margin-top: 30px;
+    font-size: px;
+    text-align: center;
+    color: #EFB64B;
+}
+#contact-des p{
+    font-size: 18px;
+    text-align: center;
+    color: #EFB64B;
 }
 
 
@@ -197,12 +215,14 @@ label {display: none;}
 #first input{
     width: 150px;
     height: 37px;
+    padding: 5px;
 }
 
 #last input{
     width: 150px;
     height: 37px;
     margin-left: 10px;
+    padding: 5px;
 }
 
 #Email {
@@ -211,12 +231,14 @@ label {display: none;}
 #Email input{
     width: 310px;
     height: 37px;
+    padding: 5px;
 }
 #message {margin-top: 10px;}
 
 #message textarea{
     width: 310px;
     height: 80px;
+    padding: 5px;
 }
 
 #submit {
@@ -230,52 +252,97 @@ label {display: none;}
     width: 109px;
     height: 34px;
     border: none;
-    border-radius: 5px;
+    
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
 }
+
+
+
+
 
 /* footer */
-footer {
-    margin-top: 15px;
-    height: 216px;
-    background-color: #080357;
+
+#main-footer {
+    background-color:#080357;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    max-width: 1500px;
+}
+
+#main-footer h2{
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+}
+
+#main-footer p{
+    font-size: 12px;
     color: white;
 }
-#footer-logo{
+
+
+
+#foot-logo{
+    height: 44px;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 70px;
+    min-width: 60px;
     text-align: center;
 }
-#footer-logo img{
-    width: 30px;
-    height: 45px;
+
+
+#foot-media {
     margin-top: 30px;
+    text-align: center;
 }
 
-#social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-right: 30px;
+
+#foot-media h2{
+    color: white;
+    font-weight: 200;
 }
 
-#social-media img{
+
+
+#foot-media img {
     width: 26px;
-    margin-left: 20px;
+    grid-row: 2;
+    margin-top: 10px;
 }
 
-#j-z {margin-top: 20px;}
-#j-z p{line-height: 15px;margin-left: 40px;}
-#e-z p {line-height: 15px;margin-left: 40px;}
-#e-z {margin-top: 20px;}
+ 
 
-/*  footer - tittles*/
-.footer-tittle {font-size: 10px;}
-.footer-email {font-size: 8px;}
-#so {display: none;}
 
-#contact-des{display: none;}
-#dek-size-bun {display: none;}
+
+#foot-join {
+    margin-top: 10px;
+}
+
+#foot-join h2 {
+    margin-top: 20px;
+}
+
+
+#foot-join p {
+    margin-top: 8px;
+}
+
+
+#foot-enquiry {
+   
+    margin-top: 20px;
+}
+
+#foot-media a  {
+    margin-right: 20px;
+}
+
+
+
 
 
 
@@ -284,43 +351,205 @@ footer {
 
 @media screen and (min-width: 768px) {
     
+    #header-logo {
+        grid-row: 1;
+        padding: 10px;
+        max-width: 80px;
+        min-width: 80px;
+    }
+
+
     #burger-con ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        text-align: center;
-      }
+        
+    }
       
-      #burger-con li {
+    #burger-con li {
         display: inline-block;
-        margin: 0 0px;
-      }
-      
-      #burger-con a {
-        display: inline-block;
-        text-decoration: none;
-        color: #333;
-        font-size: 1.9vw;
-      }
-      
-      #burger-con a:hover {
-        color: #666;
-      }
-      
-    
 
+    }
+      
+    #burger-con a {
+       
+        text-decoration: none;
+        color: #243363;
+        font-size: 20px;
+    }
+      
+    #burger-con a:hover {
+        color: #003DFF;
+    }
+      
     #burger-con {
         display: block;
-      }
+        margin-top: 10px;
+    }
 
 
     #nav-icon1 {
         display: none;
     }
+
+    #main-nav ul li a {
+        padding: 10px 25px;
+    }
+
+
+
+
+
+    #con-hero {
+        height: 165px;
+        background-image: url(../images/Product-page/hero-image-product.jpg);
+        background-image: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     
     
-    header {height: 98px;}
-    #get{height: 438px;}
+    #contact-des h1{
+        margin-top: 20px;
+        font-size: 50px;
+        text-align: center;
+        color: #EFB64B;
+    }
+
+    
+    #contact-des p{
+        font-size: 20px;
+        text-align: center;
+        color: #EFB64B;
+    }
+    
+
+    
+   
+    #get{height: 500px;}
+    
+    #button {display: none;}
+    #header-logo{width: 45px; margin-left: 30px;} 
+    #burger-menu {
+        display: grid;
+        margin-left: 60px;
+        margin-top: 25px;
+    }
+
+    #get-tittle p{
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 55px;
+    }
+    
+   
+/* input */
+    #first input{
+        width: 319px;
+        height: 50px;
+        padding: 10px;
+    }
+    
+    #last input{
+        width: 319px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 10px;
+    }
+    
+    #Email {
+        margin-top: 15px;
+    }
+    #Email input{
+        width: 656px;
+        height: 50px;
+        padding: 10px;
+    }
+    #message {margin-top: 10px;}
+    
+    #message textarea{
+        width: 656px;
+        height: 125px;
+        padding: 10px;
+    }
+    
+    #submit {margin-top: 30px;}
+    
+    #submit input{
+        background-color: #064281;
+        width: 109px;
+        height: 43px;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+        /* footer */
+    
+    #main-footer {
+        margin-top: 60px;
+    }
+    
+    
+     #main-footer h2 {
+        font-size: 20px;
+    }
+    
+    #main-footer p {
+        font-size: 15px;
+    }
+    
+    #foot-media {
+         margin-top: 80px;
+    }
+    
+    #foot-media a  {
+        margin-right: 20px;
+    }
+    
+    #foot-media img {
+        width: 40px; 
+        height: 40px; 
+    }
+          
+    #foot-media img:last-child {
+        margin-right: 0;
+    }
+    
+    #foot-logo{
+        height: 44px;
+        margin-top: 10px;
+        padding: 10px;
+        max-width: 90px;
+        min-width: 60px;
+        text-align: center;
+    }
+        
+    }
+    
+    
+    
+
+@media screen and (min-width: 1200px) {
+    #header-logo {
+        grid-row: 1;
+        padding: 10px;
+        max-width: 106px;
+        min-width: 106px;
+    }
+
+
+    #main-nav ul li a {
+        font-size: 25px;
+        padding: 10px 40px;
+    }
+
+
+
+   
+    #get{height: 667px;}
     #Ct-us {height: 156px;}
     #pro-img {height: 196px;}
     #button {display: none;}
@@ -350,87 +579,117 @@ footer {
         color: aliceblue;
     }
 
-    #burger-menu ul li a {color: #243363; }
-    #contact-des {display: grid;}
-    #pro-img {text-align: center;}
-    #pro-img p, h1 {color: #EFB64B;}
+    #con-hero {
+        height: 256px;
+        background-image: url(../images/Product-page/hero-image-product.jpg);
+        background-image: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1500px;
+    }
+    
+    
     #contact-des h1{
-        margin-top: 30px;
-        font-size: 51px;
-    }
-    #contact-des p{
-        font-size: 18px;
+        margin-top: 80px;
+        font-size: 50px;
         text-align: center;
-        color: white;
+        color: #EFB64B;
     }
+
+    
+    #contact-des p{
+        font-size: 25px;
+        text-align: center;
+        color: #EFB64B;
+    }
+    
+
+    
+   
+    #get{height: 667px;}
+    
+    #button {display: none;}
+    #header-logo{width: 45px; margin-left: 30px;} 
+    #burger-menu {
+        display: grid;
+        margin-left: 60px;
+        margin-top: 25px;
+    }
+
+    #get-tittle p{
+        font-size: 55px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        
+    }
+    
+   
 /* input */
     #first input{
-        width: 319px;
-        height: 62px;
+        width: 470px;
+        height: 90px;
+        padding: 20px;
     }
     
     #last input{
-        width: 319px;
-        height: 62px;
-        margin-left: 15px;
+        width: 470px;
+        height: 90px;
+        margin-left: 25px;
+        padding: 20px;
     }
     
     #Email {
         margin-top: 15px;
     }
     #Email input{
-        width: 656px;
-        height: 62px;
+        width: 970px;
+        height: 90px;
+        padding: 20px;
     }
     #message {margin-top: 10px;}
     
     #message textarea{
-        width: 656px;
-        height: 120px;
+        width: 970px;
+        height: 125px;
+        padding: 20px;
     }
     
-    #submit {margin-top: 12px;}
+    #submit {margin-top: 60px;}
     
     #submit input{
-        width: 153px;
-        height: 51px;
-        font-size: 26px;
+        background-color: #064281;
+        width: 170px;
+        height: 64px;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-size: 35px;
+        text-align: center;
+    }s
+
+
+    #main-footer {
+        position: relative;
+        margin-top: 40px;
     }
 
-        /* footer */
-    footer {margin-top: 25px;height: 358px;}
-    #footer-logo a img{width: 69px; height: 104px;}
-    #footer-logo img{
-        width: 55px;
-        height: 45px;
+    #main-footer h2 {
+        font-size: 30px;
     }
 
-    #social-media {
-        display: grid;
-        margin-top: 100px;
-    }
-    #so{
-        display: grid;
-        font-size: 23px;
-        margin-left: 85px;
-        margin-bottom: 20px;
-    }
-    #social-media img{width: 48px;}
-
-    #j-z {margin-top: -100px;}
-    #j-z p{line-height: 45px;}
-    #e-z {margin-top: -100px; text-align: center;}
-    #e-z p {line-height: 45px;}
-
-    /*  footer - tittles*/
-    .footer-tittle {font-size: 20px;}
-    .footer-email {font-size: 10px;}
+    #main-footer p {
+        font-size: 15px;
     }
 
-    
+    #foot-logo{
+        height: 44px;
+        margin-top: 10px;
+        padding: 10px;
+        max-width: 106px;
+        min-width: 90px;
+        text-align: center;
+    }
 
-@media screen and (min-width: 1200px) {
-    
 }
 
 /* effects here */
