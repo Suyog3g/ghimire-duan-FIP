@@ -415,6 +415,7 @@ details {margin-left: 40px;}
    height: 22px;
    font-size: 7px;
    border: none;
+   margin-top: 11px;
 }
 #cart {margin-top: 35px;}
 
@@ -643,14 +644,15 @@ footer {
     /* Shopping lemo */
     #shopping-lemo {
         margin-top: 20px;
+        margin-left: 120px;
     }
     /* cart */
     #cart button{
-    background-color: #F6B94E; 
     width: 69px;
     height: 32px;
     font-size: 10px;
     border: none;
+    margin-top: -1px;
     }
 
     #cart {
@@ -696,7 +698,6 @@ footer {
 @media screen and (min-width: 1200px) {
         
   }
-  
   
   html{
     scroll-behavior: smooth;
