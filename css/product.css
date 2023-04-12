@@ -468,10 +468,23 @@
     height: 30px;  
 }
 
+
 #fla-shp-cart {
     width: 70px;
     height: 32px;
+
+/* cart */
+#cart button{
+   background-color: #F6B94E; 
+   width: 50px;
+   height: 22px;
+   font-size: 7px;
+   border: none;
+   margin-top: 11px;
+
 }
+
+
 
 
 .fla-add-cart{
@@ -1291,6 +1304,7 @@
         margin-top: 25px;
     }
 
+
     #fla-info h3 {
         font-size: 20px;
         margin-top: 30px;
@@ -1304,6 +1318,19 @@
         margin-top: 30px;
         width: 50%;
         
+
+    /* Shopping lemo */
+    #shopping-lemo {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+    /* cart */
+    #cart button{
+    width: 69px;
+    height: 32px;
+    font-size: 10px;
+    border: none;
+    margin-top: -1px;
     }
 
     #fla-shopping {
@@ -1355,6 +1382,7 @@
         font-size: 15px;
     }
 
+
     #foot-logo{
         height: 44px;
         margin-top: 10px;
@@ -1364,5 +1392,15 @@
         text-align: center;
     }
     
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+        
+  }
+  
+  html{
+    scroll-behavior: smooth;
+}
+
 
 } 

@@ -1,3 +1,4 @@
+
 const navIcon = document.querySelector('#nav-icon1');
 const burgerCon = document.querySelector('#burger-con');
 
@@ -5,6 +6,7 @@ navIcon.addEventListener('click', function() {
   navIcon.classList.toggle('open');
   burgerCon.classList.toggle('show');
 });
+
 
 
 
